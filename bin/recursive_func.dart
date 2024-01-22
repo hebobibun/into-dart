@@ -14,7 +14,17 @@ int factorialRecursive(int value) {
   }
 }
 
+void looping(int value) {
+  if (value == 0) {
+    print("selesai");
+  } else {
+    print("perulangan ke-$value");
+    looping(value - 1);
+  }
+}
+
 void main() {
   print('Factorial of 5 is ${factorialLoop(5)}');
   print('Factorial of 5 is ${factorialRecursive(5)}');
+  looping(10000);
 }
