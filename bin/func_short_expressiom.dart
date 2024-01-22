@@ -1,5 +1,5 @@
 int sum(int first, int second) => first + second;
-String sayHello(String name) => 'Hello, ' + name;
+String sayHello(String name) => 'Hello, $name';
 
 void main() {
     print(sum(10, 10));
